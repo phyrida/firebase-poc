@@ -1,0 +1,13 @@
+<div *ngIf="message;">
+  <p>{{message.messageId}}</p>
+  <h1>{{ message.notification.title }}</h1>
+  <div innerHtml="{{ message.notification.body }}"></div>
+  <hr>
+  <div>
+    Tópico: {{message.data.topic}}
+  </div>
+  
+</div>
+<div *ngIf="!message;">
+  No Message Arrived
+</div>
